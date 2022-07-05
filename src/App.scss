@@ -1,0 +1,109 @@
+@import './nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body {
+    background: url('../assets/background.svg');
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.creator__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #faebd7;
+    word-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.creator__form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ee82ee;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.466);
+    padding: 20px 10px;
+    gap: 15px;
+    align-self: flex-start;
+    label {
+        color:#faebd7;
+        font-size: 18px;
+    }
+    input {
+        min-width: 280px;
+        padding: 2px 5px;
+    }
+    button {
+        background: #ac01fb;
+        border: none;
+        padding: 2px;
+        border-radius: 5px;
+        transition: 0.4s;
+        color: #faebd7;
+        &:hover {
+            background: #b840b8;
+        }
+    }
+}
+
+.sizes__inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    input {
+        min-width: 80px;
+        max-width: 40px;
+    }
+}
+
+.banner__container {
+    width: fit-content;
+    border: 2px solid black;
+}
+
+.creator__tools {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    @media (max-width: 710px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.banner {
+    align-self: flex-start;
+}
+
+.text__position {
+    h4 {
+        color:#faebd7;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    input {
+        min-width: 80px;
+        max-width: 40px;
+    }
+}
+
+.text__position__inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color__input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input {
+        min-width: 80px;
+        max-width: 40px;
+    }
+}
